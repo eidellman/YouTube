@@ -1,0 +1,39 @@
+.side-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 70px;
+  width: 80px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.cell {
+  height: 76px;
+  margin-top: 20px;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+
+}
+
+.cell:hover {
+  background-color: rgb(232, 232, 232)
+}
+
+.image-icon {
+  width: 26px;
+}
+
+.text-under {
+  font-size: 12px;
+  margin-top: 6px;
+}
+

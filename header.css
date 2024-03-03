@@ -1,0 +1,127 @@
+.header {
+  display: flex;
+  height: 70px;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  z-index: 100;
+}
+
+.left-search-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+}
+
+.hamburger {
+  height: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.youtube-logo {
+  height: 18px;
+}
+
+.middle-search-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  flex:1;
+ height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  box-shadow: inset 0.1 0.1 5px lightgrey;
+}
+
+.search-bar::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.loop-button {
+  height: 36px;
+  width: 50px;
+  margin-left: -15px;
+  border: 1px solid gainsboro;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.loop-button .tooltip, .bell-button .tooltip, .not-bell .tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.838);
+  color: white;
+  padding: 6px 8px;
+  bottom: -5px;
+  opacity: 0;
+  transition: 0,15s;
+}
+
+.loop-button:hover .tooltip, .bell-button:hover .tooltip, .not-bell:hover .tooltip {
+  opacity: 100%;
+  z-index: 1;
+}
+
+
+.loop {
+  width: 20px;
+}
+
+.belle {
+  width: 20px;
+}
+
+.bell-button {
+  height: 36px;
+  width: 36px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(243, 243, 243);
+}
+
+
+.right-search-section {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-shrink: 0; 
+  /* !!!!!!!!!!!!!! */
+}
+
+.not-bell {
+  position: relative;
+}
+
+.notification-circle {
+  position: absolute;
+  background-color: rgb(212, 6, 6);
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 300px;
+  top:0;
+  right: -3px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2px 5px;
+  border-radius: 30px;
+
+}
